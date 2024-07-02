@@ -1,0 +1,10 @@
+.banner {
+  width: 90%;
+  height: 400px;
+  background-color: aquamarine;
+  border-radius: 50px;
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

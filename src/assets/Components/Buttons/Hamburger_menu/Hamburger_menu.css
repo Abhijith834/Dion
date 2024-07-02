@@ -1,0 +1,36 @@
+.Hamburger_menu {
+  height: 36px;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6px;
+}
+
+.rectangle {
+  background-color: rgb(255, 255, 255);
+  height: 6px;
+  width: 35px;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+}
+
+.Hamburger_menu.clicked .rectangle1 {
+  transform: rotate(-45deg);
+  transform-origin: right;
+  border-radius: 10px;
+}
+
+.Hamburger_menu.clicked .rectangle2 {
+  opacity: 0;
+  transform: translateX(30px);
+  transform-origin: left;
+  width: 5px;
+}
+
+.Hamburger_menu.clicked .rectangle3 {
+  transform: rotate(45deg);
+  transform-origin: right;
+  border-radius: 10px;
+}

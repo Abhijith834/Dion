@@ -1,0 +1,64 @@
+.section4 {
+  background-color: chartreuse;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_boxes {
+  /* margin: 0 10px 0 10px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: var(--gap, 100px); */
+  width: 90%; /* Ensure it takes full width */
+  max-width: 1500px;
+  background-color: tomato;
+  border: 1px solid black; /* Add inside border to all cells */
+}
+
+.popup_boxes > div {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  aspect-ratio: 24 / 17; */
+}
+
+.popup_tiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 10px solid aquamarine;
+  width: 100%;
+  aspect-ratio: 24 / 17;
+}
+
+h1,
+h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+@media (min-width: 380px) {
+  .popup_boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* @media (min-width: 1050px) {
+  .popup_boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
+
+@media (min-width: 1024px) {
+  .popup_boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

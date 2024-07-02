@@ -1,0 +1,35 @@
+.section1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #f9f9f9;
+  margin-top: 60px;
+  height: 800px;
+  box-sizing: border-box;
+  width: 100%;
+  color: black;
+}
+.intro {
+  width: 100%;
+  z-index: 2;
+}
+.image {
+  background-color: rebeccapurple;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .section1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro {
+    background-color: cadetblue;
+    z-index: 1;
+  }
+
+  .image {
+    position: relative;
+  }
+}
