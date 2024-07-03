@@ -11,10 +11,10 @@ function Section1() {
           maiores.
         </h1>
         <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum,
-          facilis porro excepturi cumque, at quaerat impedit dicta, nemo aliquid
-          molestiae praesentium temporibus vero eveniet aspernatur qui doloribus
-          architecto. Repudiandae?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus tempora laborum unde ad quaerat amet, quisquam eum
+          nulla. Fugit vel excepturi nihil saepe. Debitis, eveniet. Cum delectus
+          veniam obcaecati numquam.
         </h3>
         <Button2 />
       </div>
