@@ -67,7 +67,7 @@ const NavSideMenu = ({ isOpen }) => {
           </ul>
         </li>
         <li>
-          <h3>Pricing</h3>
+          <h3 className="side_menu">Pricing</h3>
         </li>
       </ul>
     </div>

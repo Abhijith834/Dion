@@ -1,6 +1,6 @@
 import React from "react";
 import "./Dropdown.css";
-import ButtonLong from "../Buttons/Button_long/Button_long";
+import Dropdown_button from "../Buttons/Dropdown_button/Dropdown_button";
 
 const Dropdown_Container = ({ SubItems }) => {
   return (
@@ -16,7 +16,7 @@ const Dropdown_Container = ({ SubItems }) => {
               <ul className="dropdown_content">
                 {category.subItems.map((menu, subIndex) => (
                   <li key={subIndex}>
-                    <a href={menu.url} className="">
+                    <a href={menu.url} className="dropdown_content_list">
                       {menu.name}
                     </a>
                   </li>
@@ -26,7 +26,7 @@ const Dropdown_Container = ({ SubItems }) => {
           ))}
         </div>
         <div className="dropdown_button">
-          <ButtonLong />
+          <Dropdown_button />
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@ const Dropdown = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Dropdown_Container SubItems={SubItems} colorClass={colorClass} />
+      <Dropdown_Container SubItems={SubItems} />
     </div>
   );
 };

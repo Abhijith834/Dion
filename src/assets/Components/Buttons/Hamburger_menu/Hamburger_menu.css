@@ -5,15 +5,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -6px;
+  margin-top: 15px;
 }
 
 .rectangle {
-  background-color: rgb(255, 255, 255);
-  height: 6px;
-  width: 35px;
-  margin-bottom: 6px;
+  background-color: black;
+  height: 4px;
+  width: 26px;
+  margin-bottom: 5px;
   transition: all 0.2s ease;
+  border-radius: 5px;
 }
 
 .Hamburger_menu.clicked .rectangle1 {

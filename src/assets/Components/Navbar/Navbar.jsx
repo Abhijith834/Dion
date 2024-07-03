@@ -4,6 +4,9 @@ import HamburgerMenu from "../Buttons/Hamburger_menu/Hamburger_menu";
 import NavSideMenu from "../Nav_side_menu/Nav_side_menu";
 import Dropdown from "../Dropdown/Dropdown";
 import { SubItems1, SubItems2, SubItems3 } from "../Nav_sub_menu/Nav_sub_menu";
+import Dropdown_arrow from "../Props/Dropdown_arrow/Dropdown_arrow";
+import Logo from "../Logo/Logo";
+import Navbar_button from "../Buttons/Navbar_button/Navbar_button";
 
 const Navbar = () => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -39,48 +42,56 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="logo">Logo</div>
+        <div className="navbar_logo">
+          <Logo />
+        </div>
         <ul className="navbar-menu">
           <li
             className="navbar-item"
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="title_menu">Solutions</div>
+            <div className="title_menu">
+              Solutions
+              <Dropdown_arrow isOpen={dropdownVisible && dropdownIndex === 1} />
+            </div>
           </li>
           <li
             className="navbar-item"
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="title_menu">Platform</div>
+            <div className="title_menu">
+              Platform
+              <Dropdown_arrow isOpen={dropdownVisible && dropdownIndex === 2} />
+            </div>
           </li>
           <li
             className="navbar-item"
             onMouseEnter={() => handleMouseEnter(3)}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="title_menu">Resources</div>
+            <div className="title_menu">
+              Resources
+              <Dropdown_arrow isOpen={dropdownVisible && dropdownIndex === 3} />
+            </div>
           </li>
           <li>
             <div className="title_menu">Pricing</div>
           </li>
         </ul>
-        <HamburgerMenu toggleSideMenu={toggleSideMenu} />
+        <div className="navbar_side_menu">
+          <a href="/" className="navbar_login">
+            Log In
+          </a>
+          <Navbar_button />
+          <HamburgerMenu toggleSideMenu={toggleSideMenu} />
+        </div>
         <NavSideMenu isOpen={isSideMenuOpen} />
       </nav>
       <Dropdown
         isVisible={dropdownVisible}
         SubItems={getDropdownItems()}
-        colorClass={`${
-          dropdownIndex === 1
-            ? "red-dropdown"
-            : dropdownIndex === 2
-            ? "green-dropdown"
-            : dropdownIndex === 3
-            ? "blue-dropdown"
-            : ""
-        }`}
         handleMouseEnter={() => setDropdownVisible(true)}
         handleMouseLeave={handleMouseLeave}
       />

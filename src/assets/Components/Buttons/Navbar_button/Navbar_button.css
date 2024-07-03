@@ -1,0 +1,10 @@
+.navbar_button {
+  background-color: #045aff;
+  font-size: 13px;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-family: "Calibri", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}
