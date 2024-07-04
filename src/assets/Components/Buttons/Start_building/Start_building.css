@@ -1,0 +1,11 @@
+.start_building {
+  background-color: #045aff;
+  font-size: 13px;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  width: fit-content;
+  border-radius: 7px;
+  font-family: "Calibri", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}

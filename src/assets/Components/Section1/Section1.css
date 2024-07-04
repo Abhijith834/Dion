@@ -1,35 +1,249 @@
 .section1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  background-color: #f9f9f9;
+  background-color: white;
   margin-top: 50px;
-  height: 800px;
   box-sizing: border-box;
   width: 100%;
   color: black;
 }
 .intro {
   width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 2.5vw;
+  position: relative;
+}
+
+.intro_content {
+  width: 100%;
+  position: relative;
+}
+
+.intro_text,
+.arrows {
+  width: 100%;
+  height: 100%;
+}
+
+.intro_text {
+  padding-top: 2vw;
+  border: #045aff;
   z-index: 2;
 }
+
+.intro h1 {
+  text-align: center;
+  width: 100%;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff, #045aff 0px 0px 10px;
+}
+
+.intro .highlight {
+  color: #045aff;
+  text-shadow: #045aff 0px 0px 10px;
+}
+
+.intro_text p {
+  text-align: center;
+  padding-left: 6%;
+  font-size: 3vw;
+  font-weight: 500;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.hero_text_1 {
+  padding-top: 110%;
+  width: 90%;
+}
+
+.hero_text_2 {
+  width: 90%;
+}
+
+.hero_button {
+  margin-top: -50%;
+  margin-bottom: 50%;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  align-items: center;
+}
+
+.overlay-svg {
+  display: none;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .image {
-  background-color: rebeccapurple;
+  top: 42vw;
   width: 100%;
   position: absolute;
   z-index: 1;
 }
 
+.hero_image {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .section1 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 45% 55%;
   }
 
   .intro {
-    background-color: cadetblue;
+    top: 0;
+    z-index: 2;
+    font-size: 11px;
+    justify-content: right;
+  }
+
+  .intro_text {
+    padding-top: 40px;
+    margin-left: 50px;
     z-index: 1;
   }
 
+  .intro_text,
+  .arrows {
+    width: 420px;
+    height: 400px;
+  }
+
+  .arrows {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+  }
+
+  .arrow_left,
+  .arrow_right {
+    position: absolute;
+    width: 20%;
+  }
+
+  .intro h1 {
+    width: 82%;
+    text-align: left;
+    text-shadow: none;
+  }
+
+  .intro .highlight {
+    color: #045aff;
+    text-shadow: none;
+  }
+
+  .intro_text p {
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .hero_text_1 {
+    padding-top: 6%;
+    width: 54%;
+  }
+
+  .hero_text_2 {
+    width: 50%;
+  }
+
+  .overlay-svg {
+    display: block;
+  }
+
+  .svg1 {
+    margin-top: 110px;
+    margin-left: 18px;
+    width: 36px;
+  }
+
+  .svg2 {
+    margin-top: 162px;
+    margin-left: 266px;
+    width: 73px;
+  }
+
   .image {
-    position: relative;
+    width: 90%;
+    margin-left: 30px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .hero_button {
+    padding-left: 10px;
+    margin-top: 30px;
+    justify-content: left;
+  }
+}
+
+@media (min-width: 820px) {
+  .image {
+    width: 90%;
+    margin-left: 50px;
+  }
+
+  .intro_text {
+    padding-top: 40px;
+    margin-left: 0;
+  }
+
+  .svg1 {
+    margin-top: 110px;
+    margin-left: -34px;
+    width: 36px;
+  }
+
+  .svg2 {
+    margin-top: 162px;
+    margin-left: 216px;
+    width: 73px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    font-size: 11px;
+  }
+
+  .intro_text {
+    padding-top: 40px;
+    margin-left: 30px;
+  }
+
+  .intro_text,
+  .arrows {
+    width: 420px;
+    height: 400px;
+  }
+
+  .intro h1 {
+    width: 82%;
+  }
+
+  .svg1 {
+    margin-top: 110px;
+    margin-left: -4px;
+    width: 36px;
+  }
+
+  .svg2 {
+    margin-top: 162px;
+    margin-left: 246px;
+    width: 73px;
+  }
+
+  .image {
+    width: 100%;
+    margin-left: 0;
   }
 }
