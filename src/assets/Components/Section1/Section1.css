@@ -18,7 +18,8 @@
 }
 
 .intro_content {
-  width: 100%;
+  width: 90%;
+  z-index: 2;
   position: relative;
 }
 
@@ -31,7 +32,6 @@
 .intro_text {
   padding-top: 2vw;
   border: #045aff;
-  z-index: 2;
 }
 
 .intro h1 {
@@ -75,7 +75,7 @@
 
 .overlay-svg {
   display: none;
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -83,7 +83,6 @@
   top: 42vw;
   width: 100%;
   position: absolute;
-  z-index: 1;
 }
 
 .hero_image {
@@ -100,6 +99,10 @@
     z-index: 2;
     font-size: 11px;
     justify-content: right;
+  }
+
+  .intro_content {
+    width: 100%;
   }
 
   .intro_text {
@@ -133,7 +136,6 @@
   }
 
   .intro .highlight {
-    color: #045aff;
     text-shadow: none;
   }
 
@@ -188,7 +190,6 @@
 
 @media (min-width: 820px) {
   .image {
-    width: 90%;
     margin-left: 50px;
   }
 
@@ -198,32 +199,17 @@
   }
 
   .svg1 {
-    margin-top: 110px;
     margin-left: -34px;
-    width: 36px;
   }
 
   .svg2 {
-    margin-top: 162px;
     margin-left: 216px;
-    width: 73px;
   }
 }
 
 @media (min-width: 1200px) {
-  .intro {
-    font-size: 11px;
-  }
-
   .intro_text {
-    padding-top: 40px;
     margin-left: 30px;
-  }
-
-  .intro_text,
-  .arrows {
-    width: 420px;
-    height: 400px;
   }
 
   .intro h1 {
@@ -231,15 +217,11 @@
   }
 
   .svg1 {
-    margin-top: 110px;
     margin-left: -4px;
-    width: 36px;
   }
 
   .svg2 {
-    margin-top: 162px;
     margin-left: 246px;
-    width: 73px;
   }
 
   .image {
