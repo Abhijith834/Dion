@@ -6,6 +6,8 @@
   box-sizing: border-box;
   width: 100%;
   color: black;
+  max-width: 720px;
+  height: fit-content;
 }
 .intro {
   width: 100%;
@@ -140,19 +142,19 @@
   }
 
   .intro_text p {
-    padding-left: 10px;
-    font-size: 12px;
+    padding-left: 20px;
+    font-size: 13px;
     font-weight: 500;
     text-align: left;
   }
 
   .hero_text_1 {
-    padding-top: 6%;
-    width: 54%;
+    padding-top: 4%;
+    width: 70%;
   }
 
   .hero_text_2 {
-    width: 50%;
+    width: 60%;
   }
 
   .overlay-svg {
@@ -207,88 +209,54 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .intro {
+    font-size: 13.1px;
+  }
+  .intro_text {
+    margin-left: -15px;
+  }
+
+  .intro h1 {
+    width: 96%;
+  }
+
+  .svg1 {
+    margin-left: -50px;
+    margin-top: 120px;
+  }
+
+  .svg2 {
+    margin-left: 258px;
+    margin-top: 182px;
+  }
+
+  .image {
+    width: 110%;
+    margin-left: 50px;
+  }
+}
+
 @media (min-width: 1200px) {
-  .intro_text {
-    margin-left: 30px;
-  }
-
-  .intro h1 {
-    width: 82%;
-  }
-
-  .svg1 {
-    margin-left: -4px;
-  }
-
-  .svg2 {
-    margin-left: 246px;
-  }
-
-  .image {
-    width: 100%;
-    margin-left: 0;
+  .section1 {
+    transform: scale(1.2);
+    margin-top: 80px;
+    margin-bottom: calc(80px * 1.2);
   }
 }
 
 @media (min-width: 1400px) {
-  .intro {
-    font-size: 13.6px;
-  }
-  .intro_text {
-    margin-left: 30px;
-  }
-
-  .intro h1 {
-    width: 100%;
-  }
-
-  .svg1 {
-    margin-top: 130px;
-    width: 40px;
-    margin-left: -4px;
-  }
-
-  .svg2 {
-    margin-top: 162px;
-    margin-left: 246px;
-    width: 73px;
-  }
-
-  .image {
-    width: 100%;
-    margin-left: 0;
+  .section1 {
+    transform: scale(1.4);
+    margin-top: calc(100px * 1.4);
+    margin-bottom: calc(80px * 1.4);
   }
 }
 
-@media (min-width: 1400px) {
-  .intro {
-    font-size: 13.6px;
-    transform: scale(2);
-    
-  }
-  .intro_text {
-    margin-left: 30px;
-  }
-
-  .intro h1 {
-    width: 100%;
-  }
-
-  .svg1 {
-    margin-top: 130px;
-    width: 40px;
-    margin-left: -4px;
-  }
-
-  .svg2 {
-    margin-top: 162px;
-    margin-left: 246px;
-    width: 73px;
-  }
-
-  .image {
-    width: 100%;
-    margin-left: 0;
-    
+@media (min-width: 2000px) {
+  .section1 {
+    transform: scale(1.6);
+    margin-top: calc(100px * 1.6);
+    margin-bottom: calc(100px * 1.6);
   }
 }
