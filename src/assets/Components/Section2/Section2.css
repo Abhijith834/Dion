@@ -1,51 +1,94 @@
 .section2 {
-  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: fit-content;
+  flex-direction: column;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
   color: black;
+  text-align: center;
   align-items: center;
 }
 
 .section2 h1 {
   margin: 0;
-  padding: 1em 0;
-  text-align: center;
+  font-size: 25px;
+  font-family: "Krona One", sans-serif;
+  color: #045AFF;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgba(59, 49, 49, 0.656);
 }
 
 .section2 h2 {
   margin: 0;
-  padding: 0.5em 0;
-  text-align: center;
+  font-size: 15px;
+  padding: 1em 0;
+  font-family: "Inter", sans-serif;
 }
 
 .tiles {
+  flex-direction: column;
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  background-color: black;
+  background-image: url('../../images/background_1_portrait.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .tile {
-  background-color: bisque;
-  width: calc(100vw * 0.7);
-  height: calc(100vw * 0.7 * 1.15);
+  background-image: none;
+  position: relative;
+  width: 250px;
+  height: calc(250px * 1.15);
   margin: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tile::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #0094FF, #03111C);
+  opacity: 0.74;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+
+.tile h3 {
+  padding-top: 10px;
+  margin: 0;
+  width: 95%;
+  font-size: 19px;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  -webkit-text-stroke-width: 1.1px;
+  -webkit-text-stroke-color: #000;
+
+}
+
+.tile p {
+  margin: 0;
+  font-size: 16.2px;
+  width: 90%;
+  padding-top: 5px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
 }
 
 @media (max-width: 499px) {
-  .tiles {
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
-  .tile {
-    transition: transform 0.3s ease-in-out;
-  }
-
   .tile.active {
     transform: scale(1.2);
   }
@@ -53,54 +96,95 @@
 
 @media (min-width: 500px) {
   .tiles {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    width: 100%;
-    background-color: black;
+    gap: 0px 60px;
+    max-width: 600px;
+    height: 600px;
   }
 
   .tile {
-    background-color: bisque;
-    width: calc(100vw * 0.35);
-    height: calc(100vw * 0.35 * 1.15);
-    transition: transform 0.3s ease-in-out;
+    width: calc(170px);
+    height: calc(170px * 1.15);
+    margin: 0;
   }
 
   .tile.row-active {
     transform: scale(1.2);
   }
+
+  .tile h3 {
+    font-size: 16px;
+    -webkit-text-stroke-width: 0.8px;
+  }
+
+  .tile p {
+    font-size: 11px;
+    -webkit-text-stroke-width: 0.2px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .tiles {
+    transform: scale(1.2);
+    transform-origin: top;
+  }
 }
 
 @media (min-width: 801px) {
   .tiles {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-grow: 1;
-    background-color: black;
+    width: 800px;
+    background-image: url('../../images/background_1.webp');
+    max-width: 800px;
+    height: 300px;
+    gap: 0px 30px;
   }
 
   .tile {
-    background-color: bisque;
-    width: calc(100vw * 0.12);
-    height: calc(100vw * 0.12 * 1.15);
-    transition: transform 0.3s ease-in-out;
+    width: calc(160px);
+    height: calc(160px * 1.15);
   }
 
   .tile:hover {
-    transform: scale(1.25);
+    transform: scale(1.13);
+  }
+
+  .tile h3 {
+    font-size: 12px;
+    -webkit-text-stroke-width: 0.8px;
+  }
+
+  .tile p {
+    font-size: 10.4px;
+    -webkit-text-stroke-width: 0.3px;
   }
 }
 
-@media (min-width: 1024px) {
-  .tile {
-    width: calc(80vw * 0.13);
-    height: calc(80vw * 0.13 * 1.15);
+@media (min-width: 1000px) {
+  .section2 {
+    transform: scale(1.10);
+    transform-origin: top;
+  }
+}
+
+@media (min-width: 1300px) {
+  .section2 {
+    transform: scale(1.3);
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .section2 {
+    transform: scale(1.5);
+    margin-bottom: calc(100px * 1.5);
+  }
+}
+
+@media (min-width: 2000px) {
+  .section2 {
+    transform: scale(1.8);
+    margin-bottom: calc(100px * 2.5);
   }
 }
