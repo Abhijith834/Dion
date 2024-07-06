@@ -1,5 +1,5 @@
 .start_building {
-  background-color: #045aff;
+  background-color: var(--background_color);
   font-size: 7.3px;
   color: white;
   padding: 2px 8px 2px 8px;

@@ -29,7 +29,7 @@
 .nav_side_menu li {
   margin: 1em 0;
   /* background-color: rgba(11, 11, 179, 0.238); */
-  /* border: 1px solid #045aff; */
+  /* border: 1px solid var(--background_color); */
 }
 
 .nav_side_menu a {

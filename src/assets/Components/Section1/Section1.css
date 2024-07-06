@@ -39,18 +39,18 @@
 
 .intro_text {
     padding-top: 10px;
-    border: #045aff
+    border: var(--background_color)
 }
 
 .intro h1 {
     text-align: center;
     width: 100%;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, #045aff 0 0 10px
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, var(--background_color) 0 0 10px
 }
 
 .intro .highlight {
-    color: #045aff;
-    text-shadow: #045aff 0 0 10px
+    color: var(--background_color);
+    text-shadow: var(--background_color) 0 0 10px
 }
 
 .intro_text p {

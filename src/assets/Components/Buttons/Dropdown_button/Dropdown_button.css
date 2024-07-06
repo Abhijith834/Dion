@@ -1,7 +1,7 @@
 .dropdown_button_long {
   width: 75%;
   aspect-ratio: 11/1;
-  background-color: #045aff;
+  background-color: var(--background_color);
   font-size: calc(1px + 1.2vw);
   color: white;
   font-family: "Calibri", sans-serif;

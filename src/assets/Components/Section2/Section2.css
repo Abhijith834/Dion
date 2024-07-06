@@ -16,7 +16,7 @@
   margin: 0;
   font-size: 25px;
   font-family: "Krona One", sans-serif;
-  color: #045AFF;
+  color: var(--background_color);
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgba(59, 49, 49, 0.656);
 }
@@ -58,7 +58,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, #0094FF, #03111C);
+  background-image: linear-gradient(to bottom, var(--background_color), #03111C);
   opacity: 0.74;
   border-radius: 20px;
   z-index: -1;

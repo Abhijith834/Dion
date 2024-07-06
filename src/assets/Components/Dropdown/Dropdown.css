@@ -55,7 +55,7 @@
 .drop hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, #045aff 70%, transparent 30%);
+  background-image: linear-gradient(to right, var(--background_color) 70%, transparent 30%);
   background-size: 9px 1px;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .dropdown_content_list:hover {
-  color: #045aff;
+  color: var(--background_color);
 }
 
 .dropdown_container ul {

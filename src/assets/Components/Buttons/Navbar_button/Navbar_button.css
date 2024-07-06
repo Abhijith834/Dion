@@ -1,5 +1,5 @@
 .navbar_button {
-  background-color: #045aff;
+  background-color: var(--background_color);
   font-size: 13px;
   color: white;
   padding: 10px 20px 10px 20px;
