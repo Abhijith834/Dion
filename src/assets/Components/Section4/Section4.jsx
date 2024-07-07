@@ -1,16 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import "./Section4.css";
 import PopupTiles from "../Popup_tiles/Popup_tiles";
+import BO from "../../images/logos/BO.png";
+import FM from "../../images/logos/FM.png";
+import SE from "../../images/logos/SE.png";
+import SC from "../../images/logos/SC.png";
+import SM from "../../images/logos/SM.png";
+import PM from "../../images/logos/PM.png";
+import TC from "../../images/logos/TC.png";
+import FS from "../../images/logos/FS.png";
 
 const popupItems = [
-  { icon: "🚀", text: "Rocket" },
-  { icon: "🔥", text: "Fire" },
-  { icon: "💧", text: "Water" },
-  { icon: "🌟", text: "Star" },
-  { icon: "⚡", text: "Lightning" },
-  { icon: "🍀", text: "Clover" },
-  { icon: "🎵", text: "Music" },
-  { icon: "📚", text: "Books" },
+  { icon: <img src={BO} alt="BO" />, text: "Business Operations" },
+  { icon: <img src={FM} alt="BO" />, text: "Financial Management" },
+  { icon: <img src={SE} alt="BO" />, text: "Security & Compliance" },
+  { icon: <img src={SC} alt="BO" />, text: "Supply Chain" },
+  { icon: <img src={SM} alt="BO" />, text: "Sales & Marketing" },
+  { icon: <img src={PM} alt="BO" />, text: "Project Management" },
+  { icon: <img src={TC} alt="BO" />, text: "Team Colaborations" },
+  { icon: <img src={FS} alt="BO" />, text: "Field Services" },
 ];
 
 const Section4 = () => {
@@ -69,8 +77,8 @@ const Section4 = () => {
 
   return (
     <div className="section4" ref={sectionRef}>
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <h1>No-Code Solutions Customized for All Your Demands</h1>
+      <h2>Simple tools to build customized apps.</h2>
       <div className="popup_boxes">
         {popupItems.map((item, index) => (
           <div key={index}>
