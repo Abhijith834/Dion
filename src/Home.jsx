@@ -4,7 +4,7 @@ import Section2 from "./assets/Components/Section2/Section2";
 import Section4 from "./assets/Components/Section4/Section4";
 import Section5 from "./assets/Components/Section5/Section5";
 import Section6 from "./assets/Components/Section6/Section6";
-import Section7 from "./assets/Components/Section7/Section7";
+import Section7 from "./assets/Components/Section7/Section3";
 import Banner from "./assets/Components/Banner/Banner";
 import Footer from "./assets/Components/Footer/Footer";
 
@@ -17,7 +17,6 @@ const Home = () => {
       <Section4 />
       <Section5 />
       <Section6 />
-      
       <Banner />
       <Footer />
     </div>
