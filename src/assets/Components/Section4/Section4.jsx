@@ -9,6 +9,7 @@ import SM from "../../images/logos/SM.png";
 import PM from "../../images/logos/PM.png";
 import TC from "../../images/logos/TC.png";
 import FS from "../../images/logos/FS.png";
+import Find_your_solutions from "../Buttons/Find_your_solutions/Find_your_solutions";
 
 const popupItems = [
   { icon: <img src={BO} alt="BO" />, text: "Business Operations" },
@@ -86,6 +87,8 @@ const Section4 = () => {
           </div>
         ))}
       </div>
+      <div className="section4_button">
+      <Find_your_solutions /></div>
     </div>
   );
 };

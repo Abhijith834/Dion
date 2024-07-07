@@ -37,14 +37,28 @@
   color: #000;
 }
 
+.section4_button {
+  margin-top: 20px;
+}
+
 @media (min-width: 768px) {
   .popup_boxes {
     gap: 16px;
+  }
+
+  .section4_button {
+    margin-top: calc(20px * 1.5);
+    transform: scale(1.2);
   }
 }
 
 @media (min-width: 1024px) {
   .popup_boxes {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section4_button {
+    margin-top: calc(20px * 1.5);
+    transform: scale(1.5);
   }
 }

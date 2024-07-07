@@ -39,6 +39,10 @@ body {
   z-index: 999;
 }
 
+.highlight {
+  color: var(--background_color);
+}
+
 .content {
   display: flex;
   flex-direction: column;
