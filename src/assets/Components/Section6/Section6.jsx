@@ -9,18 +9,18 @@ import Tile6 from "./tiles/tile6";
 import Tile7 from "./tiles/tile7";
 
 const Section6 = () => {
-  const [selectedTile, setSelectedTile] = useState("Lorem");
+  const [selectedTile, setSelectedTile] = useState("Login");
   const navbarRef = useRef(null);
   const tileRefs = useRef([]);
 
   const tiles = [
-    { title: "Lorem", content: <Tile1 /> },
-    { title: "Ipsum", content: <Tile2 /> },
-    { title: "Dolor", content: <Tile3 /> },
-    { title: "Sit", content: <Tile4 /> },
-    { title: "Amet", content: <Tile5 /> },
-    { title: "Consectetur", content: <Tile6 /> },
-    { title: "Adipisicing", content: <Tile7 /> },
+    { title: "Login", content: <Tile1 /> },
+    { title: "Data", content: <Tile2 /> },
+    { title: "Forms", content: <Tile3 /> },
+    { title: "Maps", content: <Tile4 /> },
+    { title: "Signatures", content: <Tile5 /> },
+    { title: "Calendar", content: <Tile6 /> },
+    { title: "Reports", content: <Tile7 /> },
   ];
 
   useEffect(() => {
@@ -71,6 +71,8 @@ const Section6 = () => {
 
   return (
     <div className="section6">
+      <h1>Structure your data or online database in a way that makes sense for you.</h1>
+      <h2>Use simple tools to build customized apps to view and update your online database.</h2>
       <div
         className="section6_navbar"
         ref={navbarRef}

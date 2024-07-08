@@ -65,8 +65,7 @@ const Footer = () => {
         <div className="footer_logo">
           <Logo />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            voluptas hic vero sapiente!
+            The ultimate no-code platform for creating personalized online databases and applications for all your needs.
           </p>
         </div>
         <div className="footer_menu">
@@ -114,8 +113,7 @@ const Footer = () => {
         </div>
       </div>
       <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-        nobis.
+        Terms of Service | Privacy Policy | Copyright. © Dion 2024 all rights reserved
       </h3>
     </div>
   );

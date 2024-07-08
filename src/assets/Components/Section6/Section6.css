@@ -1,9 +1,35 @@
 .section6 {
   width: 100%;
+  height: 540px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  background-image: url("../../images/logo.webp");
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background_color);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.section6 * {
+  position: relative;
+  z-index: 2;
 }
 
 .section6_navbar {
@@ -12,10 +38,10 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  background-color: rgba(255, 85, 0, 0.242);
+  background-color: rgba(0, 0, 0, 0.479);
   width: 80%;
-  height: 35px;
-  border: 10px solid rgba(255, 85, 0, 0.004);
+  height: 60px;
+  border: 6px solid rgba(255, 85, 0, 0.004);
   border-radius: 50px;
   overflow: hidden;
   white-space: nowrap;
@@ -23,12 +49,22 @@
   scroll-behavior: smooth;
 }
 
+.section6 h1 {
+  padding-top: 30px;
+  width: 65%;
+}
+
+.section6 h2 {
+  margin-top: -10px;
+  width: 70%;
+}
+
 .section6_navbar h1 {
-  height: 35px;
-  background-color: aqua;
-  color: #000;
-  font-size: 20px;
-  padding: 0 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  padding: 5px 15px;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -36,16 +72,15 @@
 }
 
 .section6_navbar h1.active {
-  background-color: yellow;
+  background-color: rgba(255, 255, 255, 0.488);
 }
 
 .section_content {
   margin-top: 20px;
   width: 80%;
   height: 500px;
-  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   border-radius: 10px;
 }
