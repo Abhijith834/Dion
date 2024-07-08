@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: fit-content; */
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
@@ -29,15 +28,28 @@
 }
 
 .tiles {
+  position: relative;
   flex-direction: column;
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url('../../images/background_1_portrait.webp');
-  background-size: cover;
+  overflow: hidden;
+}
+
+.tiles::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background-image: url('../../images/background_1.webp');
+  background-size: contain;
   background-position: center;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  z-index: -1;
 }
 
 .tile {

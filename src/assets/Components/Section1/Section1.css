@@ -2,7 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 430px
+    height: 430px;
+    font-family: 'inter', sans-serif;
 }
 
 .section1_content {
@@ -45,7 +46,8 @@
 .intro h1 {
     text-align: center;
     width: 100%;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, var(--background_color) 0 0 10px
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, var(--background_color) 0 0 10px;
+    font-size: 17px;
 }
 
 .intro_text p {
@@ -67,7 +69,7 @@
 
 .hero_button {
     position: absolute;
-    margin-top: -52%;
+    margin-top: -45%;
     margin-left: 65px;
     display: flex;
     justify-content: center;
@@ -148,9 +150,10 @@
     }
 
     .intro h1 {
-        width: 95%;
+        width: 97%;
         text-align: left;
-        text-shadow: none
+        text-shadow: none;
+        font-size: 20px;
     }
 
     .intro .highlight {
@@ -159,7 +162,7 @@
 
     .intro_text p {
         padding-left: 8px;
-        font-size: 5.7px;
+        font-size: 5.8px;
         font-weight: 500;
         text-align: left;
         text-shadow: none
@@ -179,21 +182,21 @@
     }
 
     .svg1 {
-        margin-top: 52px;
+        margin-top: 57px;
         margin-left: 18px;
         width: 19px
     }
 
     .svg2 {
-        margin-top: 80px;
-        margin-left: 157px;
+        margin-top: 86px;
+        margin-left: 164px;
         width: 36px
     }
 
     .image {
         width: 180px;
         margin-top: 10px;
-        margin-left: 30px;
+        margin-left: 40px;
         position: static;
         align-items: center;
         z-index: 1
