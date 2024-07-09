@@ -5,8 +5,8 @@ function Section2() {
   const tileRefs = useRef([]);
 
   useEffect(() => {
-    const isSmallScreen = window.innerWidth < 500;
-    const isMediumScreen = window.innerWidth >= 500 && window.innerWidth <= 800;
+    const isSmallScreen = window.innerWidth < 768;
+    const isMediumScreen = window.innerWidth >= 768 && window.innerWidth < 1024;
 
     const observerOptions = {
       root: null,

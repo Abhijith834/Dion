@@ -1,5 +1,6 @@
 .section4 {
   width: 100%;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   width: 95%;
-  max-width: 1500px;
 }
 
 .popup_boxes>div {
@@ -28,12 +28,12 @@
 
 .section4 h1 {
   color: var(--background_color);
-  font-size: 32px;
-  width: 90%;
+  font-size: 26px;
+  width: 95%;
 }
 
 .section4 h2 {
-  font-size: 17px;
+  font-size: 16px;
   color: #000;
 }
 
@@ -42,6 +42,10 @@
 }
 
 @media (min-width: 768px) {
+  .section4 {
+    max-width: 768px;
+  }
+
   .popup_boxes {
     gap: 16px;
   }

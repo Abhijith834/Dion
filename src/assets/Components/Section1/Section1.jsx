@@ -8,31 +8,29 @@ import Start_building from "../Buttons/Start_building/Start_building";
 function Section1() {
   return (
     <div className="section1">
-      <div className="section1_content">
-        <div className="intro">
-          <div className="intro_content">
-            <div className="intro_text">
+      <div className="intro_heading">
               <h1>
                 Build the <span className="highlight">perfect one</span> that
                 suits you
                 <br />
                 It’s only a <span className="highlight">few clicks</span> away
               </h1>
-
-              <p className="hero_text_1">
-                The CRM is designed with the end-user in mind, ensuring that it
-                fits various business models and user requirements comfortably.
-              </p>
+          </div>
+      <div className="intro_text">
+                <p className="hero_text_1">
+                  The CRM is designed with the end-user in mind, ensuring that it
+                  fits various business models and user requirements comfortably.
+                </p>
               <p className="hero_text_2">
                 A hassle-free implementation process, which is a significant
                 advantage for businesses looking to get started with minimal
                 downtime.
               </p>
-              <div className="hero_button">
+          </div>
+      <div className="hero_button">
                 <Start_building />
-              </div>
-            </div>
-            <div className="arrows">
+          </div>
+        <div className="arrows">
               <div className="arrow_left">
                 <img
                   src={leftArrow}
@@ -48,17 +46,15 @@ function Section1() {
                 />
               </div>
             </div>
-          </div>
-        </div>
         <div className="image">
           <img
             src={hero_image}
             alt="Descriptive Alt Text"
             className="hero_image"
           />
-        </div>
+          </div>
       </div>
-    </div>
+
   );
 }
 
