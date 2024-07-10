@@ -2,7 +2,7 @@ import React from "react";
 import "./Section1.css";
 import leftArrow from "../../svg/Left arrow.svg";
 import rightArrow from "../../svg/Right arrow.svg";
-import hero_image from "../../images/homepage.webp";
+import hero_image from "../../images/homepage-small.webp";
 import Start_building from "../Buttons/Start_building/Start_building";
 
 function Section1() {
