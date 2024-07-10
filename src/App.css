@@ -20,3 +20,141 @@ header {
   display: flex;
   justify-content: center;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+
+@media (min-width: 360px) {
+  .content {
+    transform: scale(1.05);
+    transform-origin: top;
+    height: 7700px;
+  }
+}
+
+@media (min-width: 375px) {
+  .content {
+    transform: scale(1.07);
+    transform-origin: top;
+    height: 8000px;
+  }
+}
+
+@media (min-width: 414px) {
+  .content {
+    transform: scale(1.13);
+    transform-origin: top;
+    height: 8920px;
+  }
+}
+
+@media (min-width: 480px) {
+  .content {
+    transform: scale(1.21);
+    transform-origin: top;
+    height: 10220px;
+  }
+}
+
+@media (min-width: 540px) {
+  .content {
+    transform: scale(1.32);
+    transform-origin: top;
+    height: 12170px;
+  }
+}
+
+@media (min-width: 600px) {
+  .content {
+    transform: scale(1.35);
+    transform-origin: top;
+    height: 12730px;
+  }
+}
+
+@media (min-width: 640px) {
+  .content {
+    transform: scale(1.4);
+    transform-origin: top;
+    height: 13700px;
+  }
+}
+
+@media (min-width: 720px) {
+  .content {
+    transform: scale(1.48);
+    transform-origin: top;
+    height: 15300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    transform: scale(1);
+    transform-origin: top;
+    height: 5530px;
+  }
+}
+
+@media (min-width: 800px) {
+  .content {
+    width: 80vw;
+    transform: scale(1.022);
+    transform-origin: top;
+    height: 5680px;
+  }
+}
+
+@media (min-width: 900px) {
+  .content {
+    transform: scale(1.04);
+    transform-origin: top;
+    height: 5940px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: 70vw;
+    transform: scale(1);
+    transform-origin: top;
+    height: 5230px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .content {
+    transform: scale(1.09);
+    transform-origin: top;
+    height: 6230px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content {
+    transform: scale(1.1);
+    transform-origin: top;
+    height: 6350px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .content {
+    transform: scale(1.16);
+    transform-origin: top;
+    height: 7050px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .content {
+    transform: scale(1.3);
+    transform-origin: top;
+    height: 8860px;
+  }
+}

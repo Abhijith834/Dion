@@ -1,5 +1,6 @@
 .section5 {
   width: 95%;
+  height: 2400px;
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 298px;
@@ -101,11 +102,12 @@
 @media (min-width: 768px) {
   .section5 {
     max-width: 768px;
+    height: 1800px;
   }
 
   .section5_grid {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 250px 20px 200px 250px 20px 200px 250px 20px;
+    grid-template-rows: 200px 250px 20px 200px 250px 20px 200px 250px 80px;
     row-gap: 20px;
   }
 
@@ -193,5 +195,6 @@
   .section5 {
     transform: scale(1.2);
     transform-origin: top;
+    height: 2100px;
   }
 }

@@ -81,14 +81,6 @@
     width: 100%;
 }
 
-/* @media (min-width: 375px) {
-    .section1 {
-        transform: scale(1.1);
-        transform-origin: top;
-        height: calc(550px * 1.1);
-    }
-} */
-
 @media (min-width: 768px) {
     .section1 {
         height: 450px;
@@ -96,7 +88,7 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 250px 170px auto;
         justify-items: center;
-        padding-top: 50px;
+        padding-top: 20px;
         color: #000;
         text-align: left;
         z-index: 10;

@@ -47,12 +47,7 @@ body {
   color: var(--background_color);
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-}
+
 
 h1 {
   font-size: 28px;
@@ -98,15 +93,14 @@ button:focus-visible {
   }
 }
 
-@media (min-width: 412px) {
+/* @media (min-width: 412px) {
   .content {
     transform: scale(1.14);
     transform-origin: top;
-    height: 9100px;
   }
-}
+} */
 
-@media (min-width: 820px) {
+/* @media (min-width: 820px) {
   .content {
     width: 80vw;
   }
@@ -116,4 +110,4 @@ button:focus-visible {
   .content {
     width: 70vw;
   }
-}
+} */

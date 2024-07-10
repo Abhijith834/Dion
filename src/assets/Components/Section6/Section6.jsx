@@ -71,6 +71,7 @@ const Section6 = () => {
 
   return (
     <div className="section6">
+      <div className="section6_content">
       <h1>Structure your data or online database in a way that makes sense for you.</h1>
       <h2>Use simple tools to build customized apps to view and update your online database.</h2>
       <div
@@ -89,9 +90,10 @@ const Section6 = () => {
           </h1>
         ))}
       </div>
-      <div className="section_content">
+      <div className="section6_image">
         {selectedTile !== null &&
           tiles.find((tile) => tile.title === selectedTile)?.content}
+      </div>
       </div>
     </div>
   );
