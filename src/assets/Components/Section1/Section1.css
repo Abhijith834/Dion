@@ -10,7 +10,6 @@
     padding-top: 50px;
     text-align: center;
     color: #000;
-    /* background-color: aqua; */
 }
 
 .intro_heading {
@@ -157,11 +156,3 @@
         width: 68px;
     }
 }
-
-/* @media (min-width: 1024px) {
-    .section1 {
-        transform: scale(1.1);
-        transform-origin: top;
-        height: auto;
-    }
-} */

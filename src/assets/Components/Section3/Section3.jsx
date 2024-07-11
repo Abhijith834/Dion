@@ -7,6 +7,7 @@ const Section3 = () => {
   const [color, setColor] = useState(getComputedStyle(document.documentElement).getPropertyValue('--background_color').trim());
   const ipadRef = useRef(null);
   const imgRef = useRef(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     document.documentElement.style.setProperty('--background_color', color);
@@ -15,18 +16,16 @@ const Section3 = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px 0px -20% 0px', // Trigger when 20% of the element is from the bottom of the viewport
+      rootMargin: '0px 0px -30% 0px',
       threshold: 0.8,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !hasAnimated) {
           ipadRef.current.classList.add('animate-ipad');
           imgRef.current.classList.add('animate-ipad-image');
-        } else {
-          ipadRef.current.classList.remove('animate-ipad');
-          imgRef.current.classList.remove('animate-ipad-image');
+          setHasAnimated(true);
         }
       });
     }, options);
@@ -40,12 +39,13 @@ const Section3 = () => {
         observer.unobserve(ipadRef.current);
       }
     };
-  }, []);
+  }, [hasAnimated]);
 
   return (
     <div className='section3'>
       <div className="section3_heading1">
-        <h2>Elevate the customer experience</h2></div>
+        <h2>Elevate the customer experience</h2>
+      </div>
       <div className="section3_content_text1">
         <p>Exceed customer expectations, solve customer challenges faster, and create deeper connections across your organization with Dion.</p>
         <ul>
@@ -64,7 +64,8 @@ const Section3 = () => {
         <HexColorPicker color={color} onChange={setColor} />
       </div>
       <div className="section3_heading2">
-        <h2>Infinite Customization Options for Your Unique Business Needs</h2></div>
+        <h2>Infinite Customization Options for Your Unique Business Needs</h2>
+      </div>
       <div className="section3_content_text2">
         <ul>
           <li>Customize the interface to reflect your brand's identity</li>
