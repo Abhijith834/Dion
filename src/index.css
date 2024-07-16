@@ -11,7 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --background_color: #045AFF;
+  --background_color: #045aff;
 }
 
 a {
@@ -46,8 +46,6 @@ body {
 .highlight {
   color: var(--background_color);
 }
-
-
 
 h1 {
   font-size: 28px;

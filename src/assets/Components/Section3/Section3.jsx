@@ -1,30 +1,34 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { HexColorPicker } from 'react-colorful';
-import './Section3.css';
-import ipad_animation from '../../images/ipad_animation.gif';
+import React, { useState, useEffect, useRef } from "react";
+import { HexColorPicker } from "react-colorful";
+import "./Section3.css";
+import ipad_animation from "../../images/ipad_animation.gif";
 
 const Section3 = () => {
-  const [color, setColor] = useState(getComputedStyle(document.documentElement).getPropertyValue('--background_color').trim());
+  const [color, setColor] = useState(
+    getComputedStyle(document.documentElement)
+      .getPropertyValue("--background_color")
+      .trim()
+  );
   const ipadRef = useRef(null);
   const imgRef = useRef(null);
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    document.documentElement.style.setProperty('--background_color', color);
+    document.documentElement.style.setProperty("--background_color", color);
   }, [color]);
 
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px 0px -30% 0px',
+      rootMargin: "0px 0px -30% 0px",
       threshold: 0.8,
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting && !hasAnimated) {
-          ipadRef.current.classList.add('animate-ipad');
-          imgRef.current.classList.add('animate-ipad-image');
+          ipadRef.current.classList.add("animate-ipad");
+          imgRef.current.classList.add("animate-ipad-image");
           setHasAnimated(true);
         }
       });
@@ -42,12 +46,15 @@ const Section3 = () => {
   }, [hasAnimated]);
 
   return (
-    <div className='section3'>
+    <div className="section3">
       <div className="section3_heading1">
         <h2>Elevate the customer experience</h2>
       </div>
       <div className="section3_content_text1">
-        <p>Exceed customer expectations, solve customer challenges faster, and create deeper connections across your organization with Dion.</p>
+        <p>
+          Exceed customer expectations, solve customer challenges faster, and
+          create deeper connections across your organization with Dion.
+        </p>
         <ul>
           <li>Convenient customer support portal</li>
           <li>Knowledge management, ticketing, and insights</li>
