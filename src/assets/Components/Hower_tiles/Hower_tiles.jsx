@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import "./Section2.css";
+import "./hower_tiles.css";
 
-function Section2() {
+function Section2({ heading, subheading, tiles }) {
   const tileRefs = useRef([]);
 
   useEffect(() => {
@@ -50,10 +50,7 @@ function Section2() {
       });
     };
 
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     tileRefs.current.forEach((tile) => {
       if (tile) observer.observe(tile);
@@ -67,38 +64,20 @@ function Section2() {
   }, []);
 
   return (
-    <div className="section2">
-      <h1 className="section-heading">WHY CHOOSE US</h1>
-      <h2 className="section-subheading">Here are a few reasons to choose Dion over another solution:</h2>
+    <div className="hower_tiles">
+      <h1 className="section-heading">{heading}</h1>
+      <h2 className="section-subheading">{subheading}</h2>
       <div className="tiles">
-        <div
-          className="tile"
-          ref={(el) => (tileRefs.current[0] = el)}
-        >
-          <h3>Seamless Integration</h3>
-          <p>Effortlessly integrate with your existing tools and systems for a streamlined workflow. Our CRM eliminates data silos and enhances productivity, ensuring smooth operation across your business ecosystem</p>
-        </div>
-        <div
-          className="tile"
-          ref={(el) => (tileRefs.current[1] = el)}
-        >
-          <h3>Customization and Flexibility</h3>
-          <p>Tailor our CRM to meet your unique business needs. With customizable modules and adaptable features, our platform evolves with your business, ensuring a perfect fit for any workflow or process</p>
-        </div>
-        <div
-          className="tile"
-          ref={(el) => (tileRefs.current[2] = el)}
-        >
-          <h3>Security and Reliability</h3>
-          <p>Experience unmatched data security and consistent reliability. Our CRM safeguards your information with advanced encryption and regular security updates, ensuring your business operations are secure and uninterrupted</p>
-        </div>
-        <div
-          className="tile"
-          ref={(el) => (tileRefs.current[3] = el)}
-        >
-          <h3>Affordable and Scalable Solutions</h3>
-          <p>Get a cost-effective CRM solution that grows with your business. Our scalable platform offers flexible pricing plans, making it accessible for businesses of all sizes and adaptable to your changing needs</p>
-        </div>
+        {tiles.map((tile, index) => (
+          <div
+            key={index}
+            className="tile"
+            ref={(el) => (tileRefs.current[index] = el)}
+          >
+            <h3>{tile.heading}</h3>
+            <p>{tile.content}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

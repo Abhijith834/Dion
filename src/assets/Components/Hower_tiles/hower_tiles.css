@@ -1,4 +1,4 @@
-.section2 {
+.hower_tiles {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.section2 h1 {
+.hower_tiles h1 {
   margin: 0;
   font-size: 25px;
   font-family: "Krona One", sans-serif;
@@ -22,7 +22,7 @@
   -webkit-text-stroke-color: rgba(59, 49, 49, 0.656);
 }
 
-.section2 h2 {
+.hower_tiles h2 {
   margin: 0;
   font-size: 15px;
   padding: 1em 0;
@@ -122,7 +122,7 @@
 }
 
 @media (min-width: 768px) {
-  .section2 {
+  .hower_tiles {
     max-width: 768px;
     height: 600px;
     margin-bottom: 150px;
@@ -161,7 +161,7 @@
 }
 
 @media (min-width: 1024px) {
-  .section2 {
+  .hower_tiles {
     max-width: 1024px;
     height: 300px;
     margin: 0;
